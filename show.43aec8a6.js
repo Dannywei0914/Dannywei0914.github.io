@@ -14235,6 +14235,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     slidesToShow: 4,
     slidesToScroll: 4
   });
+  setTimeout(function () {// $('.start').hide();
+  }, 2000);
   window.setInterval(function () {
     img1.toggleClass('sliders-option_show');
     img2.toggleClass('sliders-option_show');
@@ -14305,7 +14307,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61183" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
