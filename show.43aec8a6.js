@@ -15780,29 +15780,61 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     slidesToShow: 4,
     slidesToScroll: 4
   });
-  setTimeout(function () {// $('.start').hide();
-  }, 2000);
   window.setInterval(function () {
-    img1.toggleClass('sliders-option_show');
-    img2.toggleClass('sliders-option_show');
+    img1.toggleClass('fullscreen-sliders__option_show');
+    img2.toggleClass('fullscreen-sliders__option_show');
   }, 5000);
+  (0, _jquery.default)('#menu').click(function () {
+    console.log(123);
+    (0, _jquery.default)('.nav-menu').addClass('nav-menu_show');
+  });
   (0, _jquery.default)('#icon').click(function () {
     window.scrollTo({
-      top: (0, _jquery.default)('.body').get(0).offsetTop,
+      top: (0, _jquery.default)('.body').get(0).offsetTop - 50,
       behavior: 'smooth'
     });
   });
   (0, _jquery.default)('#about').click(function () {
     window.scrollTo({
-      top: (0, _jquery.default)('.body').get(0).offsetTop,
+      top: (0, _jquery.default)('.body').get(0).offsetTop - 50,
+      behavior: 'smooth'
+    });
+  });
+  (0, _jquery.default)('#menu-about').click(function () {
+    (0, _jquery.default)('.nav-menu').removeClass('nav-menu_show');
+    window.scrollTo({
+      top: (0, _jquery.default)('.body').get(0).offsetTop - 50,
       behavior: 'smooth'
     });
   });
   (0, _jquery.default)('#skills').click(function () {
     window.scrollTo({
-      top: (0, _jquery.default)('#event').get(0).offsetTop + (0, _jquery.default)('.fullscreen').get(0).offsetHeight,
+      top: (0, _jquery.default)('.skill').get(0).offsetTop + (0, _jquery.default)('.fullscreen').get(0).offsetHeight,
       behavior: 'smooth'
     });
+  });
+  (0, _jquery.default)('#menu-skills').click(function () {
+    (0, _jquery.default)('.nav-menu').removeClass('nav-menu_show');
+    window.scrollTo({
+      top: (0, _jquery.default)('.skill').get(0).offsetTop + (0, _jquery.default)('.fullscreen').get(0).offsetHeight,
+      behavior: 'smooth'
+    });
+  });
+  (0, _jquery.default)('#creation').click(function () {
+    window.scrollTo({
+      top: (0, _jquery.default)('.works').get(0).offsetTop + (0, _jquery.default)('.fullscreen').get(0).offsetHeight - 110,
+      behavior: 'smooth'
+    });
+  });
+  (0, _jquery.default)('#menu-creation').click(function () {
+    (0, _jquery.default)('.nav-menu').removeClass('nav-menu_show');
+    window.scrollTo({
+      top: (0, _jquery.default)('.works').get(0).offsetTop + (0, _jquery.default)('.fullscreen').get(0).offsetHeight - 110,
+      behavior: 'smooth'
+    });
+  });
+  (0, _jquery.default)('#close').click(function () {
+    (0, _jquery.default)('.nav-menu').removeClass('nav-menu_show');
   });
   window.addEventListener('scroll', function () {
     if (window.scrollY !== 0) {
@@ -15811,7 +15843,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery.default)('.nav').removeClass('nav_bgcolor');
     }
 
-    if (window.scrollY > (0, _jquery.default)('.sliders').get(0).offsetHeight / 2) {
+    if (window.scrollY > (0, _jquery.default)('.fullscreen-sliders').get(0).offsetHeight / 2) {
       (0, _jquery.default)('.about').addClass('about_show');
     } else {
       (0, _jquery.default)('.about').removeClass('about_show');
@@ -15962,7 +15994,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61105" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64215" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
