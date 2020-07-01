@@ -297,7 +297,7 @@ body, html {
   top: 0;
   z-index: 1;
   width: 100%;
-  height: inherit;
+  height: 100%;
   overflow: hidden;
   -webkit-transition: .6s;
   transition: .6s;
@@ -327,12 +327,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (max-width: 500px) {
-  .header .fullscreen-sliders__option img {
-    background-size: 100% 100%;
-  }
 }
 
 .header .fullscreen-sliders .img-1 {
