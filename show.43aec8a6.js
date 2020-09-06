@@ -16700,11 +16700,12 @@ txtBox.ready(function () {
         email = '';
         name = '';
         textBox = '';
+        (0, _jquery.default)('#inputName').val('');
+        (0, _jquery.default)('#inputEmail').val('');
+        (0, _jquery.default)('#txtBox').val('');
         alert('寄送成功');
-        console.log('SUCCESS!', response.status, response.text);
       }).catch(function (error) {
         alert('寄送失敗');
-        console.log('FAILED...', error);
       });
     } else {
       alert('請輸入正確');
@@ -16929,7 +16930,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64055" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57866" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
