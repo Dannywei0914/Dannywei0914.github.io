@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/dannywei/Desktop/side-project/creation/font/AAntaraDistance-OVA2e.ttf":[["AAntaraDistance-OVA2e.7381cb39.ttf","font/AAntaraDistance-OVA2e.ttf"],"font/AAntaraDistance-OVA2e.ttf"],"./../images/life/IMG9527.jpg":[["IMG9527.4ba7f483.jpg","images/life/IMG9527.jpg"],"images/life/IMG9527.jpg"],"./../images/life/IMG_9527.JPG":[["IMG_9527.b774aa3c.JPG","images/life/IMG_9527.JPG"],"images/life/IMG_9527.JPG"],"./../images/icons/download-white.svg":[["download-white.220b43ea.svg","images/icons/download-white.svg"],"images/icons/download-white.svg"],"./../images/travel-adventure_75PYASX6U1.jpg":[["travel-adventure_75PYASX6U1.a6d49d40.jpg","images/travel-adventure_75PYASX6U1.jpg"],"images/travel-adventure_75PYASX6U1.jpg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/dannywei/Desktop/side-project/creation/font/AAntaraDistance-OVA2e.ttf":[["AAntaraDistance-OVA2e.7381cb39.ttf","font/AAntaraDistance-OVA2e.ttf"],"font/AAntaraDistance-OVA2e.ttf"],"./../images/life/IMG9527.jpg":[["IMG9527.4ba7f483.jpg","images/life/IMG9527.jpg"],"images/life/IMG9527.jpg"],"./../images/life/IMG_9527.jpg":[["IMG_9527.908a6a47.jpg","images/life/IMG_9527.jpg"],"images/life/IMG_9527.jpg"],"./../images/icons/download-white.svg":[["download-white.220b43ea.svg","images/icons/download-white.svg"],"images/icons/download-white.svg"],"./../images/travel-adventure_75PYASX6U1.jpg":[["travel-adventure_75PYASX6U1.a6d49d40.jpg","images/travel-adventure_75PYASX6U1.jpg"],"images/travel-adventure_75PYASX6U1.jpg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53208" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49980" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
