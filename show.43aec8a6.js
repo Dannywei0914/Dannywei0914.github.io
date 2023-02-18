@@ -16714,8 +16714,9 @@ txtBox.ready(function () {
   (0, _jquery.default)('.regular').slick({
     dots: true,
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
   });
   window.setInterval(function () {
     img1.toggleClass('fullscreen-sliders__option_show');
@@ -16930,7 +16931,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60022" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55755" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
